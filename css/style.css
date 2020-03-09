@@ -1,0 +1,282 @@
+/*css ITLOB app*/
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+/*BOTONES Y LINKS*/
+.btn-success{background-color: #0DA574 !important;}
+.btn-success:hover{background-color: #05724F !important;}
+
+.btn-danger{background-color: #FF0000 !important;}
+.btn-danger:hover{background-color: #840B0B !important;}
+
+.btn-aliado{width: 18.75rem;}
+.btn-aliado:hover{
+	background-color: #EAC100 !important;
+	color: #001F3F !important;
+	border: none !important;
+}
+
+.btn-cliente{width: 18.75rem;}
+.btn-cliente:hover{
+	background-color: #006DA5 !important;
+	border: none !important;
+}
+
+.btn-green{
+	border-color: #0B8457 !important;
+	color: #0B8457 !important;
+	width: 18.75rem;}
+.btn-green:hover{
+	background-color: #0B8457 !important;
+	color: #ffffff !important;
+	border: none !important;
+}
+
+.btn-inicio-aliado{
+	border-color: #FFBF00 !important;
+	color: #001F3F !important;
+	width: 18.75rem;
+}
+.btn-inicio-aliado:hover{
+	background-color: #FFBF00 !important;
+	color: #001F3F !important;
+	border: none !important;
+}
+
+.btn-inicio-cliente{
+	border-color: #006DA5 !important;
+	color: #006DA5 !important;
+	width: 18.75rem;
+}
+.btn-inicio-cliente:hover{
+	background-color: #006DA5 !important;
+	color: #ffffff !important;
+	border: none !important;
+}
+
+.text-link:hover{
+	text-decoration: underline;
+	color: #ffffff !important;
+}
+
+.nav-link.registro-tab {
+    color: #646464;
+    background-color: #ffffff;
+    border: 0.313rem;
+}
+
+.nav-link.registro-tab.active {
+    color: #ffffff;
+    background-color: #0B8457;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-aliado li a{
+	color:#646464;
+}
+
+.nav-aliado li a:hover{
+	color:#000000;
+}
+
+.nav-aliado li a.active{
+	color:#001F3F;
+}
+
+/*BACKGROUND*/
+.itlob-bg{
+	height: 93vh;
+  	background-image: url('../img/Slide1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 20s linear infinite alternate;
+}
+
+@keyframes slide{
+	0%{background-image: url('../img/Slide1.png');}
+	40%{background-image: url('../img/Slide2.png');}
+	80%{background-image: url('../img/Slide3.png');}
+}
+
+.bg-icon{
+	height: 100vh;
+	background-image: url('../img/bg-itlob.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-green{
+	background-color: #0B8457;
+}
+
+.bg-yellow{
+	background-color: #FFBF00;
+}
+
+.bg-blue{
+	background-color: #006DA5;
+}
+
+.bg-grey{
+	background-color: #E8E8E8;
+}
+
+.bg-aliado{
+	background-image: url('../img/Aliado-image.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-cliente{
+	background-image: url('../img/cliente-image.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-nav-mobile{
+	background-color: #E8E8E8;
+}
+
+.shadow-header{
+	-webkit-box-shadow: 0px 1px 6px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 1px 6px rgba(0,0,0,0.4);
+	box-shadow: 0px 1px 6px rgba(0,0,0,0.4);
+}
+
+.box-rounded{border-radius: 0.313rem;}
+
+.box-rounded-left{
+		border-radius: 0.313rem 0 0 0.313rem;
+	}
+
+/*TEXTOS*/
+h1, h2, h3, h4, h5, h6, p, small{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+}
+h1{/*48px*/font-size: 3rem !important;}
+h2{/*42px*/font-size: 2.625rem !important;}
+h3{/*36px*/font-size: 2.25rem !important;}
+h4{/*32px*/font-size: 2em !important;}
+h5{/*28px*/font-size: 1.75rem !important;}
+h6{/*24px*/font-size: 1.5rem !important;}
+p{/*16px*/font-size: 1rem !important;}
+small{/*10px*/font-size: 0.625rem !important;}
+
+.text-grey{
+	color: #646464;
+}
+.text-red{
+	color: #840B0B;
+}
+.text-green{
+	color: #0B8457;
+}
+
+
+/*CONTENIDO*/
+.slidetext{height: 35vh;}
+
+.carousel-indicators li {
+    background-color: transparent ;
+    border: 1px solid #ffffff !important;
+    opacity: 1;
+}
+.carousel-indicators .active {background-color: #ffffff !important;}
+
+.divider-red{
+	border-top: 1px solid #840B0B;
+}
+
+/*FORMULARIO*/
+.md-form label.active{
+	color: #0B8457 !important;
+}
+
+.md-form input:focus{
+	border-bottom: 1px solid #0B8457 !important;
+	box-shadow: none !important;
+}
+
+/*FOOTER*/
+.footer-itlob{
+	background-color: #001F3F;
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-itlob-pages{
+	background-color: #001F3F;
+}
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	.footer-itlob{position: relative;}
+	h1{/*32px*/font-size: 2rem !important;}
+	h6{/*16px*/font-size: 1rem !important;}
+	small{/*12px*/font-size: 0.75rem !important;}
+	.slidetext{height: 48vh;}
+	.itlob-bg{height: auto;}
+	.btn-aliado{width: 15.625rem;}
+	.btn-cliente{width: 15.625rem;}
+	.btn-green{width: 15.625rem;}
+	.bg-icon{ background-color: #E8E8E8; height: auto; background-image: none;}
+	.bg-aliado{height: 120px;background-image: url('../img/aliado-image-sm.png');}
+	.bg-cliente{height: 120px;background-image: url('../img/cliente-image-sm.png');}
+	.btn-inicio-aliado{width: 15.625rem;}
+	.btn-inicio-cliente{width: 15.625rem;}
+	.box-rounded{border-radius: 0;}
+	.box-rounded-left{border-radius: 0;}
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.footer-itlob{position: relative;}
+	h1{/*32px*/font-size: 2rem !important;}
+	h6{/*16px*/font-size: 1rem !important;}
+	small{/*12px*/font-size: 0.75rem !important;}
+	.slidetext{height: 48vh;}
+	.itlob-bg{height: auto;}
+	.bg-icon{height: auto;}
+	.bg-aliado{height: 180px;background-image: url('../img/aliado-image-md.png');}
+	.bg-cliente{height: 180px;background-image: url('../img/cliente-image-md.png');}
+	.box-rounded{border-radius: 0;}
+	.box-rounded-left{border-radius: 0;}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.slidetext{height: 45vh;}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h1{/*36px*/font-size: 2.25rem !important;}
+	h6{/*24px*/font-size: 1.5rem !important;}
+	small{/*10px*/font-size: 0.625rem !important;}
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
+
+@media (min-width: 1600px) {
+	.footer-itlob-pages{
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	}
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ITLOB APP</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- font poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-icon">
+    <!-- cabecera -->
+    <nav class="bg-green shadow-header">
+    <header class="container mx-auto pt-3 pb-3"><a href="index.html"><img src="./img/Itlob-logo.svg" alt="Itlob app"></a></header>
+    </nav>
+    <!-- fin cabecera -->
+
+    <section class="row d-flex justify-content-center container mx-auto mt-4 mb-4">
+      <div class="col-md-10 offset-md-2 mb-3"><h4 class="text-grey">Registro</h4></div>  
+      <div class="col-12 col-md-8">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link registro-tab active" id="Aliado-tab" data-toggle="tab" href="#Aliado" role="tab" aria-controls="Aliado"
+              aria-selected="true">Aliado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link registro-tab" id="cliente-tab" data-toggle="tab" href="#cliente" role="tab" aria-controls="cliente"
+              aria-selected="false">Cliente</a>
+          </li>
+        </ul>
+        <div class="tab-content bg-white rounded-bottom rounded-right shadow-header" id="myTabContent">
+          <div class="tab-pane fade show active" id="Aliado" role="tabpanel" aria-labelledby="Aliado-tab">
+              <!-- Form Aliado-->
+            <form action="#!" class="row container mx-auto">
+              <!-- Razón social -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="text" id="razonsocial" class="form-control">
+                <label for="razonsocial">Razón social</label>
+              </div>
+              <!-- NIT -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="number" id="nit" class="form-control">
+                <label for="nit">Nit</label>
+              </div>
+              <!-- Email -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="email" id="email" class="form-control">
+                <label for="email">Correo electrónico</label>
+              </div>
+              <!-- Teléfono / celular -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="tel" id="telefono" class="form-control">
+                <label for="telefono">Teléfono / celular</label>
+              </div>
+              <!-- Dirección -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="text" id="direccion" class="form-control">
+                <label for="direccion">Dirección</label>
+              </div>
+              <!-- Usuario -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="text" id="usuario" class="form-control">
+                <label for="usuario">Usuario</label>
+              </div>
+              <!-- Password -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="password" id="contraseña" class="form-control">
+                <label for="contraseña">Contraseña</label>
+              </div>
+              <!-- Confirmación Password -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="password" id="contraseña2" class="form-control">
+                <label for="contraseña2">Confirmar contraseña</label>
+              </div>
+              <!-- aceptar terminos y condiciones -->
+              <div class="custom-control custom-checkbox col-12 mt-3 mb-3">
+                  <input type="checkbox" class="custom-control-input" id="confirma">
+                  <label class="custom-control-label" for="confirma">Acepto términos y condiciones *</label>
+              </div> 
+              <!-- boton registro -->
+              <div class="col-12 d-flex justify-content-center justify-content-md-end mb-3">
+                <a href="./Partner-views/inicio_sesion.html">
+                  <button type="button" class="btn btn-outline-light btn-green waves-effect rounded-pill btn-lg">Registro</button></a>
+              </div>
+            </form>
+            <!-- Form -->
+          </div>
+          <div class="tab-pane fade" id="cliente" role="tabpanel" aria-labelledby="cliente-tab">
+              <!-- Form Cliente-->
+            <form action="#!" class="row container mx-auto">
+              <!-- Razón social -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="text" id="name" class="form-control">
+                <label for="name">Nombre completo</label>
+              </div>
+              <!-- NIT -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="number" id="documento" class="form-control">
+                <label for="documento">Número de documento</label>
+              </div>
+              <!-- Email -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="email" id="email" class="form-control">
+                <label for="email">Correo electrónico</label>
+              </div>
+              <!-- Teléfono / celular -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="tel" id="telefono" class="form-control">
+                <label for="telefono">Teléfono / celular</label>
+              </div>
+              <!-- Dirección -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="text" id="direccion" class="form-control">
+                <label for="direccion">Dirección</label>
+              </div>
+              <!-- Usuario -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="text" id="usuario" class="form-control">
+                <label for="usuario">Usuario</label>
+              </div>
+              <!-- Password -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="password" id="contraseña" class="form-control">
+                <label for="contraseña">Contraseña</label>
+              </div>
+              <!-- Confirmación Password -->
+              <div class="md-form col-12 col-md-6 pl-0 mt-3 mb-3">
+                <input type="password" id="contraseña2" class="form-control">
+                <label for="contraseña2">Confirmar contraseña</label>
+              </div>
+              <!-- aceptar terminos y condiciones -->
+              <div class="custom-control custom-checkbox col-12 mt-3 mb-3">
+                  <input type="checkbox" class="custom-control-input" id="confirma">
+                  <label class="custom-control-label" for="confirma">Acepto términos y condiciones *</label>
+              </div> 
+              <!-- boton registro -->
+              <div class="col-12 d-flex justify-content-center justify-content-md-end mb-3">
+                <a href="./Client-views/inicio_sesion.html">
+                  <button type="button" class="btn btn-outline-light btn-green waves-effect rounded-pill btn-lg">Registro</button></a>
+              </div>
+            </form>
+            <!-- Form -->
+          </div>
+        </div>    
+      </div>
+    </section>
+    
+
+  <!-- Footer -->
+<footer class="page-footer font-small footer-itlob-pages mt-1 pb-2 pb-md-0">
+  <!-- Copyright -->
+  <div class="row container mx-auto pt-3">
+    <div class="col-12 col-md-3"><a class="text-link" href="" target="_blank"><p><small>Políticas de uso y seguridad</small></p></a></div>
+    <div class="col-12 col-md-3 text-md-center text-left"><a class="text-link" href="" target="_blank"><p><small>Políticas de privacidad y ley de datos personales</small></p></a></div>
+    <div class="col-12 col-md-3"><p><small>Copyright © 2020. Todos los derechos reservados</small></p></div>
+    <div class="col-12 col-md-3">
+      <a class="d-flex justify-content-end" href="https://talentonboard.co/" target="_blank"><p class="align-self-center"><small>Creado por</small></p><img src="./img/LOGO-TALENTONBOARD.png" alt="TALENT ONBOARD"></a></div>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ITLOB APP</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <!-- font poppins -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- cabecera -->
+    <nav class="nav-bar bg-yellow fixed-top shadow-header scrolling-navbar">
+      <div class="row container mx-auto">
+        <div class="col-6 col-md-2 col-lg-3">
+          <header class="pt-3 pb-3">
+            <a href="./home.html"><img src="../img/Itlob-logo-azul.svg" alt="Itlob app"></a>
+          </header>
+        </div>
+        <div class="col-6 col-md-10 col-lg-9 align-self-center">
+          <ul class="nav-aliado nav justify-content-end">
+            <li class="nav-item align-self-center d-none d-md-block">
+              <a class="nav-link disabled" href="#">Mis notificaciones</a>
+            </li>
+            <li class="nav-item align-self-center d-none d-md-block">
+              <a class="nav-link active" href="./postulaciones.html">Mis postulaciones</a>
+            </li>
+            <li class="nav-item align-self-center d-none d-md-block">
+              <a class="nav-link disabled" href="#">Perfil</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link" href="../index.html"><img src="../img/log-out.svg" onmouseover="this.src='../img/log-out-hover.svg'"
+onmouseout="this.src='../img/log-out.svg'"></a>
+            </li>
+          </ul>    
+        </div>  
+      </div>
+    </nav>
+    <!-- fin cabecera -->
+    <br>
+    </br>
+    <section class="postulaciones row container mx-auto mt-3 mt-md-5 pt-3 mb-5">
+      <div class="col-12 col-md-8 offset-md-2">
+        <h5 class="text-grey">Mis postulaciones</h5>
+      </div>
+      <!-- postulación 1 -->
+      <div class="col-12 col-md-8 offset-md-2 bg-white shadow-header rounded p-3 mt-2">
+        <p class="text-grey mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ligula vel mollis ultricies. Mauris facilisis porttitor metus non scelerisque. Etiam a metus a odio interdum porta. Mauris commodo enim non nisl tincidunt semper. Cras facilisis tortor at luctus imperdiet. Suspendisse in tellus a sem molestie pulvinar a a erat. Nunc euismod ligula sit amet dui maximus, ac efficitur urna tempor. Vestibulum justo mauris, pellentesque ac auctor eu, placerat id augue. Maecenas ligula nulla, varius ut turpis et, maximus viverra nisi. Cras ac scelerisque sapien, id lobortis eros.</p>
+      </div>
+      <div class="col-12 col-md-8 offset-md-2 d-flex mt-2 justify-content-between p-0">
+        <p class="text-grey mb-0 align-self-center">Pendiente</p>
+        <div class="d-flex justify-content-end">
+          <a data-toggle="modal" data-target="#declinar"><button type="button" class="btn btn-danger">Declinar</button></a>
+        </div>
+      </div>
+      <!-- Modal declinar-->
+            <div class="modal fade" id="declinar" tabindex="-1" role="dialog" aria-labelledby="declinarLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content p-2">
+                  <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
+                    <img class="float-right" src="../img/Close icon.svg">
+                  </button>
+                  <h4 class="text-center" id="postuladoLabel">¿Seguro quieres declinar a esta oportunidad?</h4>
+                  <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-outline-light btn-green waves-effect rounded-pill btn-lg">si</button>
+                    <button type="button" class="btn btn-outline-light btn-green waves-effect rounded-pill btn-lg">no</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fin modal -->
+      <div class="dropdown-divider w-75 mx-auto"></div>
+      <!-- FIN postulación 1 -->
+      <!-- postulación 2 -->
+      <div class="col-12 col-md-8 offset-md-2 bg-white shadow-header rounded p-3 mt-2">
+        <p class="text-grey mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ligula vel mollis ultricies. Mauris facilisis porttitor metus non scelerisque. Etiam a metus a odio interdum porta. Mauris commodo enim non nisl tincidunt semper. Cras facilisis tortor at luctus imperdiet. Suspendisse in tellus a sem molestie pulvinar a a erat. Nunc euismod ligula sit amet dui maximus, ac efficitur urna tempor. Vestibulum justo mauris, pellentesque ac auctor eu, placerat id augue. Maecenas ligula nulla, varius ut turpis et, maximus viverra nisi. Cras ac scelerisque sapien, id lobortis eros.</p>
+      </div>
+      <div class="col-12 col-md-8 offset-md-2 d-flex mt-2 justify-content-between p-0">
+        <p class="text-green mb-0 align-self-center">Aprobado</p>
+        <div class="d-flex justify-content-end">
+          <a data-toggle="modal" data-target="#contactar"><button type="button" class="btn btn-success">Contactar</button></a>
+        </div>
+      </div>
+      <!-- Modal contactar-->
+      <div class="modal fade" id="contactar" tabindex="-1" role="dialog" aria-labelledby="contactarLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content p-2">
+            <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
+              <img class="float-right" src="../img/Close icon.svg">
+            </button>
+            <div class="avatar mx-auto white">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle"
+                alt="woman avatar">
+              <p class="text-center" id="contactarLabel">Ana Carmona</p>
+            </div>
+            <div class="modal-body">
+              <p class="text-grey mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ligula vel mollis ultricies. Mauris facilisis porttitor metus non scelerisque. Etiam a metus a odio interdum porta. Mauris commodo enim non nisl tincidunt semper. Cras facilisis tortor at luctus imperdiet. Suspendisse in tellus a sem molestie pulvinar a a erat. Nunc euismod ligula sit amet dui maximus, ac efficitur urna tempor. Vestibulum justo mauris, pellentesque ac auctor eu, placerat id augue. Maecenas ligula nulla, varius ut turpis et, maximus viverra nisi. Cras ac scelerisque sapien, id lobortis eros.</p>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-outline-light btn-green waves-effect rounded-pill btn-lg"><i class="fas fa-phone-alt"></i> Llamar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin modal -->
+      <div class="dropdown-divider w-75 mx-auto"></div>
+      <!-- FIN postulación 2 -->
+      <!-- postulación 3 -->
+      <div class="col-12 col-md-8 offset-md-2 bg-grey shadow-header rounded p-3 mt-2">
+        <p class="text-red mb-0 align-self-center">Postulación no aprobada</p>
+      <div class="dropdown-divider w-100 divider-red"></div>
+        <p class="text-grey mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut scelerisque ligula vel mollis ultricies. Mauris facilisis porttitor metus non scelerisque. Etiam a metus a odio interdum porta. Mauris commodo enim non nisl tincidunt semper. Cras facilisis tortor at luctus imperdiet. Suspendisse in tellus a sem molestie pulvinar a a erat. Nunc euismod ligula sit amet dui maximus, ac efficitur urna tempor. Vestibulum justo mauris, pellentesque ac auctor eu, placerat id augue. Maecenas ligula nulla, varius ut turpis et, maximus viverra nisi. Cras ac scelerisque sapien, id lobortis eros.</p>
+      </div>
+      <!-- FIN postulaciones 3 -->
+    </section>
+
+    <!-- menu mobile -->
+    <nav class="fixed-bottom bg-nav-mobile d-md-none d-block">
+      <ul class="nav d-flex justify-content-between justify-content-sm-center">
+        <li class="nav-item align-self-center">
+          <a class="nav-link disabled" href="#"><img src="../img/notificaciones-icon.svg"></a>
+        </li>
+        <li class="nav-item align-self-center">
+          <a class="nav-link" href="./postulaciones.html"><img src="../img/postulaciones-icon-active.svg"></a>
+        </li>
+        <li class="nav-item align-self-center">
+          <a class="nav-link disabled" href="#"><img src="../img/perfil-icon.svg"></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small footer-itlob-pages mt-0 pb-2 pb-md-0 mb-5 mb-md-1">
+      <!-- Copyright -->
+      <div class="row container mx-auto pt-3">
+        <div class="col-12 col-md-3"><a class="text-link" href="" target="_blank"><p><small>Políticas de uso y seguridad</small></p></a></div>
+        <div class="col-12 col-md-3 text-md-center text-left"><a class="text-link" href="" target="_blank"><p><small>Políticas de privacidad y ley de datos personales</small></p></a></div>
+        <div class="col-12 col-md-3"><p><small>Copyright © 2020. Todos los derechos reservados</small></p></div>
+        <div class="col-12 col-md-3">
+          <a class="d-flex justify-content-end" href="https://talentonboard.co/" target="_blank"><p class="align-self-center"><small>Creado por</small></p><img src="../img/LOGO-TALENTONBOARD.png" alt="TALENT ONBOARD"></a></div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../js/mdb.min.js"></script>
+</body>
+</html>
