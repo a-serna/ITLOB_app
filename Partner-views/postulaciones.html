@@ -126,18 +126,21 @@ onmouseout="this.src='../img/log-out.svg'"></a>
     </section>
 
     <!-- menu mobile -->
-    <nav class="fixed-bottom bg-nav-mobile d-md-none d-block">
-      <ul class="nav d-flex justify-content-center">
-        <li class="nav-item align-self-center">
-          <a class="nav-link disabled" href="#"><img src="../img/notificaciones-icon.svg"></a>
-        </li>
-        <li class="nav-item align-self-center">
-          <a class="nav-link" href="./postulaciones.html"><img src="../img/postulaciones-icon-active.svg"></a>
-        </li>
-        <li class="nav-item align-self-center">
-          <a class="nav-link disabled" href="#"><img src="../img/perfil-icon.svg"></a>
-        </li>
-      </ul>
+    <nav class="fixed-bottom bg-nav-mobile d-md-none d-block shadow-header">
+      <div class="row d-flex p-2">
+        <div class="col-4 p-1">
+          <a class="disabled" href="#"><img class="mx-auto d-block" src="../img/alarm.svg"></a>
+          <p class="text-center mb-0"><small>Notificaciones</small></p>
+        </div>
+        <div class="col-4 p-1 active">
+          <a href="./postulaciones.html"><img class="mx-auto d-block" src="../img/like-hover.svg"></a>
+          <p class="text-center mb-0"><small>Mis Postulaciones</small></p>
+        </div>
+        <div class="col-4 p-1">
+          <a class="disabled" href="#"><img class="mx-auto d-block" src="../img/user.svg"></a>
+          <p class="text-center mb-0"><small>Perfil</small></p>
+        </div>
+      </div>
     </nav>
 
     <!-- Footer -->

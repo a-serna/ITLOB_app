@@ -58,6 +58,15 @@ body{
 	border: none !important;
 }
 
+.btn-publicar{
+	position: fixed;
+	bottom: 15%;
+	right: 5%;
+	width: 5em;
+	height: 5em;
+	z-index: 2;
+}
+
 .text-link:hover{
 	text-decoration: underline;
 	color: #ffffff !important;
@@ -85,6 +94,18 @@ body{
 
 .nav-aliado li a.active{
 	color:#001F3F;
+}
+
+.nav-cliente li a{
+	color:#ffffff;
+}
+
+.nav-cliente li a:hover{
+	color:#E8E8E8;
+}
+
+.nav-cliente li a.active{
+	color:#FDFFFC;
 }
 
 /*BACKGROUND*/
@@ -196,12 +217,33 @@ small{/*10px*/font-size: 0.625rem !important;}
 	border-top: 1px solid #840B0B;
 }
 
+thead{
+	background-color: red;
+}
+/*tr{
+	background-color: #C4DCE8;
+}*/
+
 /*FORMULARIO*/
 .md-form label.active{
 	color: #0B8457 !important;
 }
 
 .md-form input:focus{
+	border-bottom: 1px solid #0B8457 !important;
+	box-shadow: none !important;
+}
+
+select .md-form {
+	border-bottom: 1px solid #0B8457 !important;
+	box-shadow: none !important;
+}
+
+.md-form select.active{
+	color: #0B8457 !important;
+}
+
+.md-form select:focus{
 	border-bottom: 1px solid #0B8457 !important;
 	box-shadow: none !important;
 }

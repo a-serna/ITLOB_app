@@ -19,89 +19,67 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="bg-icon">
+<body>
     <!-- cabecera -->
-    <nav class="bg-blue shadow-header">
-    <header class="container mx-auto pt-3 pb-3"><a href="../index.html"><img src="../img/Itlob-logo.svg" alt="Itlob app">
-    </a></header>
+    <nav class="nav-bar bg-blue fixed-top shadow-header scrolling-navbar">
+      <div class="row container mx-auto">
+        <div class="col-6 col-md-2 col-lg-3">
+          <header class="pt-3 pb-3">
+            <a href="./home.html"><img src="../img/Itlob-logo.svg" alt="Itlob app"></a>
+          </header>
+        </div>
+        <div class="col-6 col-md-10 col-lg-9 align-self-center">
+          <ul class="nav-cliente nav justify-content-end">
+            <li class="nav-item align-self-center d-none d-md-block">
+              <a class="nav-link disabled" href="#">Mis notificaciones</a>
+            </li>
+            <li class="nav-item align-self-center d-none d-md-block">
+              <a class="nav-link" href="./publicaciones.html">Mis publicaciones</a>
+            </li>
+            <li class="nav-item align-self-center d-none d-md-block">
+              <a class="nav-link disabled" href="#">Perfil</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link" href="../index.html"><img src="../img/log-out-white.svg" onmouseover="this.src='../img/log-out-white-hover.svg'"
+onmouseout="this.src='../img/log-out-white.svg'"></a>
+            </li>
+          </ul>    
+        </div>  
+      </div>
     </nav>
     <!-- fin cabecera -->
 
-    home cliente
-    <section class="row mt-0 mb-0 mt-md-5 mb-md-5 ml-0 mr-0">
-      <div class="col-12 col-md-10 col-lg-8 mx-auto bg-white box-rounded">
-        <div class="row">
-          <!-- imagen -->
-          <div class="col-12 col-md-6 col-lg-6 bg-cliente box-rounded-left">
-          </div>
-          <!-- sesión -->
-          <div class="col-12 col-md-6 p-4">
-            <h4 class="text-center text-grey">¡Bienvenido Cliente!</h4>
-            <!-- Usuario -->
-            <div class="md-form pl-0 mt-4 mb-3">
-              <input type="text" id="usuario" class="form-control">
-              <label for="usuario">Usuario</label>
-            </div>
-            <!-- Password -->
-            <div class="md-form pl-0 mt-3 mb-3">
-              <input type="password" id="contraseña" class="form-control">
-              <label for="contraseña">Contraseña</label>
-            </div>
-            <!-- boton inicio -->
-            <div class="d-flex justify-content-center mb-3">
-              <a href="./home.html">
-                <button type="button" class="btn btn-outline-light btn-inicio-cliente waves-effect rounded-pill btn-lg">Inicio de sesión</button>
-              </a>
-            </div>
-            <a data-toggle="modal" data-target="#clave">
-              <p class="text-grey">¿Olvidaste tú contraseña?</p>
-            </a>
-            <a href="../registro.html">
-              <p class="text-grey">¡Registrate ahora!</p>
-            </a>
-            <a href="../Partner-views/inicio_sesion.html">
-              <p class="text-grey text-right mt-5 mb-0 pb-0">Iniciar sesión como Aliado</p>
-            </a>
-            <!-- Modal olvidar contraseña-->
-            <div class="modal fade" id="clave" tabindex="-1" role="dialog" aria-labelledby="claveLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content p-2">
-                  <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
-                    <img class="float-right" src="../img/Close icon.svg">
-                  </button>
-                  <h4 class="text-center" id="claveLabel">¿Olvidaste tu contraseña?</h4>
-                  <p class="text-center">Te ayudamos a recuperarla.</p>
-                  <div class="modal-body">
-                    <div class="md-form pl-0 mt-4 mb-3">
-                      <input type="email" id="email" class="form-control">
-                      <label for="email">Correo electrónico</label>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-outline-light btn-green waves-effect rounded-pill btn-lg">Registro</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- fin modal -->
-          </div>
+    <!-- menu mobile -->
+    <nav class="fixed-bottom bg-nav-mobile d-md-none d-block shadow-header">
+      <div class="row d-flex p-2">
+        <div class="col-4 p-1">
+          <a class="disabled" href="#"><img class="mx-auto d-block" src="../img/alarm.svg"></a>
+          <p class="text-center mb-0"><small>Notificaciones</small></p>
+        </div>
+        <div class="col-4 p-1 active">
+          <a href="./publicaciones.html"><img class="mx-auto d-block" src="../img/like.svg"></a>
+          <p class="text-center mb-0"><small>Mis Publicaciones</small></p>
+        </div>
+        <div class="col-4 p-1">
+          <a class="disabled" href="#"><img class="mx-auto d-block" src="../img/user.svg"></a>
+          <p class="text-center mb-0"><small>Perfil</small></p>
         </div>
       </div>
-    </section>
-    
-  <!-- Footer -->
-<footer class="page-footer font-small footer-itlob-pages mt-0 pb-2 pb-md-0">
-  <!-- Copyright -->
-  <div class="row container mx-auto pt-3">
-    <div class="col-12 col-md-3"><a class="text-link" href="" target="_blank"><p><small>Políticas de uso y seguridad</small></p></a></div>
-    <div class="col-12 col-md-3 text-md-center text-left"><a class="text-link" href="" target="_blank"><p><small>Políticas de privacidad y ley de datos personales</small></p></a></div>
-    <div class="col-12 col-md-3"><p><small>Copyright © 2020. Todos los derechos reservados</small></p></div>
-    <div class="col-12 col-md-3">
-      <a class="d-flex justify-content-end" href="https://talentonboard.co/" target="_blank"><p class="align-self-center"><small>Creado por</small></p><img src="../img/LOGO-TALENTONBOARD.png" alt="TALENT ONBOARD"></a></div>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+    </nav>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small footer-itlob-pages mt-0 pb-2 pb-md-0 mb-5 mb-md-1">
+      <!-- Copyright -->
+      <div class="row container mx-auto pt-3">
+        <div class="col-12 col-md-3"><a class="text-link" href="" target="_blank"><p><small>Políticas de uso y seguridad</small></p></a></div>
+        <div class="col-12 col-md-3 text-md-center text-left"><a class="text-link" href="" target="_blank"><p><small>Políticas de privacidad y ley de datos personales</small></p></a></div>
+        <div class="col-12 col-md-3"><p><small>Copyright © 2020. Todos los derechos reservados</small></p></div>
+        <div class="col-12 col-md-3">
+          <a class="d-flex justify-content-end" href="https://talentonboard.co/" target="_blank"><p class="align-self-center"><small>Creado por</small></p><img src="../img/LOGO-TALENTONBOARD.png" alt="TALENT ONBOARD"></a></div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
   <!-- jQuery -->
   <script type="text/javascript" src="../js/jquery.min.js"></script>
